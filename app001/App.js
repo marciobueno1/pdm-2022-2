@@ -1,6 +1,7 @@
-import Home from "./screens/Home";
-import { ListaPessoas } from "./screens/ListaPessoas";
+// import Home from "./screens/Home";
+// import { ListaPessoas } from "./screens/ListaPessoas";
+import { ParImpar } from "./screens/ParImpar";
 
 export default function App() {
-  return <ListaPessoas />;
+  return <ParImpar />;
 }
