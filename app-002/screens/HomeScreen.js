@@ -11,9 +11,28 @@ export const HomeScreen = ({ navigation }) => {
       }}
     >
       <Text>Home Screen</Text>
+      <Button title="Go to List" onPress={() => navigation.navigate("List")} />
       <Button
         title="Go to Details"
         onPress={() => navigation.navigate("Details")}
+      />
+      <Button
+        title="Go to Details 86"
+        onPress={() =>
+          navigation.navigate("Details", {
+            itemId: 86,
+            otherParam: "anything you want here",
+          })
+        }
+      />
+      <Button
+        title="Go to Details 87"
+        onPress={() =>
+          navigation.navigate("Details", {
+            itemId: 87,
+            otherParam: "anything you want here",
+          })
+        }
       />
     </View>
   );
