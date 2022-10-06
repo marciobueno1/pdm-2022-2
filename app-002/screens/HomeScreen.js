@@ -1,4 +1,4 @@
-import { Button, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 
 export const HomeScreen = ({ navigation }) => {
   return (
@@ -10,7 +10,11 @@ export const HomeScreen = ({ navigation }) => {
         backgroundColor: "beige",
       }}
     >
-      <Text>Home Screen</Text>
+      <Text style={styles.titulo}>Home Screen</Text>
+      <Button
+        title="Go to Counter"
+        onPress={() => navigation.navigate("Counter")}
+      />
       <Button title="Go to List" onPress={() => navigation.navigate("List")} />
       <Button
         title="Go to Details"
@@ -37,3 +41,10 @@ export const HomeScreen = ({ navigation }) => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  titulo: {
+    fontFamily: "Inter-Black",
+    fontSize: 24,
+  },
+});
